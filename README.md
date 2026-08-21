@@ -1,6 +1,7 @@
 # Snake Race — ARSW Lab #2 (Java 21, Virtual Threads)
 
 **Escuela Colombiana de Ingeniería – Arquitecturas de Software**  
+## Carlos Duban Rojas y Juan Daniel Bogotá
 Laboratorio de programación concurrente: condiciones de carrera, sincronización y colecciones seguras.
 
 ---
