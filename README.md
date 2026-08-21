@@ -5,7 +5,11 @@
 Laboratorio de programación concurrente: condiciones de carrera, sincronización y colecciones seguras.
 
 ---
+## Solución del Laboratorio
+Parte I Calentamiento:[Lab2 Part1 Calentamiento.docx](docs/Lab2%20Part1%20Calentamiento.docx)   
+Parte II  SnakeRace concurrente: [Lab 2.docx](docs/Lab%202.docx)
 
+---
 ## Requisitos
 
 - **JDK 21** (Temurin recomendado)
