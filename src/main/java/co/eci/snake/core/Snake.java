@@ -5,7 +5,7 @@ import java.util.Deque;
 
 public final class Snake {
     private final Deque<Position> body = new ArrayDeque<>();
-    private Direction direction; // ya no necesita volatile: synchronized garantiza visibilidad
+    private Direction direction;
     private int maxLength = 5;
 
     private Snake(Position start, Direction dir) {

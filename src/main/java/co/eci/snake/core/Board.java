@@ -65,7 +65,7 @@ public final class Board {
             }
         }
 
-        snake.advance(next, ateMouse); // fuera del lock de Board; protegido por el propio lock de Snake
+        snake.advance(next, ateMouse);
 
         if (ateTurbo) return MoveResult.ATE_TURBO;
         if (ateMouse) return MoveResult.ATE_MOUSE;

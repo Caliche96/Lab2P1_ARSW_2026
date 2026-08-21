@@ -25,7 +25,6 @@ public final class GameClock implements AutoCloseable {
         this.tick = Objects.requireNonNull(tick, "tick");
     }
 
-    /** Debe llamarse una vez, indicando cuántos SnakeRunner deben confirmar su pausa. */
     public void setWorkerCount(int n) {
         this.totalWorkers = n;
     }
@@ -59,7 +58,6 @@ public final class GameClock implements AutoCloseable {
         }
     }
 
-    /** Llamado por cada SnakeRunner en cada tick. Bloquea (sin busy-wait) mientras el estado sea PAUSED. */
     public void awaitRunning() throws InterruptedException {
         synchronized (pauseLock) {
             boolean announced = false;
@@ -73,7 +71,6 @@ public final class GameClock implements AutoCloseable {
         }
     }
 
-    /** Bloquea (sin busy-wait) hasta que TODOS los workers hayan confirmado su pausa. */
     public void awaitAllPaused() throws InterruptedException {
         pauseLatch.await();
     }

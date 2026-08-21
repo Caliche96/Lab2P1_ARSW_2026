@@ -25,7 +25,7 @@ public final class SnakeRunner implements Runnable {
     public void run() {
         try {
             while (!Thread.currentThread().isInterrupted()) {
-                clock.awaitRunning(); // se bloquea aquí (sin busy-wait) si el juego está pausado
+                clock.awaitRunning();
 
                 maybeTurn();
                 var res = board.step(snake);
